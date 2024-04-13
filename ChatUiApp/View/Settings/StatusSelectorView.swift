@@ -20,12 +20,7 @@ struct StatusSelectorView: View {
                         .padding()
                     
                     
-                    HStack{
-                        Text("Available")
-                        Spacer()
-                    }
-                    .padding()
-                    .background(Color.white)
+                    StatusCell()
                     
                     Text("SELECT YOUR STATUS")
                         .foregroundColor(.gray)
@@ -33,12 +28,11 @@ struct StatusSelectorView: View {
 
                     
                     ForEach((0...10), id:\.self) { _ in
-                        HStack{
-                            Text("Available")
-                                Spacer()
-                        }
-                        .padding()
-                        .background(Color.white)
+                        Button(action: {
+                            print("Change status here..")
+                        }, label: {
+                            StatusCell()                        })
+                        
                         
                     }
                     
@@ -51,4 +45,17 @@ struct StatusSelectorView: View {
 
 #Preview {
     StatusSelectorView()
+}
+
+struct StatusCell: View {
+    var body: some View {
+        HStack{
+            Text("Available")
+                .foregroundColor(.black)
+            Spacer()
+        }
+        .frame(height: 56)
+        .padding(.horizontal)
+        .background(Color.white)
+    }
 }
