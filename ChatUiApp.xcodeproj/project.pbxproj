@@ -26,6 +26,9 @@
 		1E61DCA52BCB18F70088BBDC /* StatusSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61DCA42BCB18F70088BBDC /* StatusSelectorView.swift */; };
 		1E61DCA72BCB228E0088BBDC /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61DCA62BCB228E0088BBDC /* StatusViewModel.swift */; };
 		1E61DCAA2BCB4DB20088BBDC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61DCA92BCB4DB20088BBDC /* ImagePicker.swift */; };
+		1EE5F92B2BCEEE5D00C20E66 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5F92A2BCEEE5D00C20E66 /* ConversationCell.swift */; };
+		1EE5F92D2BCEF74B00C20E66 /* NewMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5F92C2BCEF74B00C20E66 /* NewMessagesView.swift */; };
+		1EE5F92F2BCEF8F300C20E66 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5F92E2BCEF8F300C20E66 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		1E61DCA42BCB18F70088BBDC /* StatusSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSelectorView.swift; sourceTree = "<group>"; };
 		1E61DCA62BCB228E0088BBDC /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		1E61DCA92BCB4DB20088BBDC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		1EE5F92A2BCEEE5D00C20E66 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		1EE5F92C2BCEF74B00C20E66 /* NewMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessagesView.swift; sourceTree = "<group>"; };
+		1EE5F92E2BCEF8F300C20E66 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				1E61DC982BC9B7720088BBDC /* ConversationsView.swift */,
+				1EE5F92A2BCEEE5D00C20E66 /* ConversationCell.swift */,
+				1EE5F92C2BCEF74B00C20E66 /* NewMessagesView.swift */,
+				1EE5F92E2BCEF8F300C20E66 /* UserCell.swift */,
 			);
 			path = Conversations;
 			sourceTree = "<group>";
@@ -270,12 +279,15 @@
 				1E61DC942BC9B6FD0088BBDC /* SettingsView.swift in Sources */,
 				1E61DCA12BCA0DAB0088BBDC /* SettingsCellViewModel.swift in Sources */,
 				1E61DC9D2BCA08EC0088BBDC /* SettingsCell.swift in Sources */,
+				1EE5F92F2BCEF8F300C20E66 /* UserCell.swift in Sources */,
 				1E61DC922BC9B6C40088BBDC /* ChannelsView.swift in Sources */,
 				1E61DC9B2BC9C7060088BBDC /* SettingsHeaderView.swift in Sources */,
 				1E61DC992BC9B7720088BBDC /* ConversationsView.swift in Sources */,
 				1E61DC8A2BC9A9540088BBDC /* CustomTextFields.swift in Sources */,
 				1E61DC772BC9963B0088BBDC /* ContentView.swift in Sources */,
 				1E61DC752BC9963B0088BBDC /* ChatUiAppApp.swift in Sources */,
+				1EE5F92B2BCEEE5D00C20E66 /* ConversationCell.swift in Sources */,
+				1EE5F92D2BCEF74B00C20E66 /* NewMessagesView.swift in Sources */,
 				1E61DC962BC9B71B0088BBDC /* ChatsView.swift in Sources */,
 				1E61DC872BC996660088BBDC /* RegistrationView.swift in Sources */,
 				1E61DC8D2BC9B47B0088BBDC /* MainTabView.swift in Sources */,
@@ -409,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatUiApp/Preview Content\"";
@@ -425,8 +438,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tamerafyon.com.ChatUiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ChatApp.tamerafyon.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatUiApp/Preview Content\"";
@@ -454,8 +469,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tamerafyon.com.ChatUiApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ChatApp.tamerafyon.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
