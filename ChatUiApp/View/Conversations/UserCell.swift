@@ -23,6 +23,7 @@ struct UserCell: View {
                     Text("Merhaba 👋🏼")
                         .font(.system(size: 15, weight: .semibold))
                 }
+                .foregroundColor(.black)
                 
                               Spacer()
                     }
