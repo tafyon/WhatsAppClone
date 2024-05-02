@@ -22,8 +22,12 @@ struct ConversationsView: View {
             //Chats
             ScrollView{
                 VStack(alignment: .leading) {                    ForEach((0 ... 10), id: \.self) { _ in
-                    ConversationsCell()                }
-                }
+                    NavigationLink(
+                        destination:ChatsView(),
+                        label: {
+                            ConversationsCell()
+                        })
+                }}
             }
             //floating button
             Button(action: {
