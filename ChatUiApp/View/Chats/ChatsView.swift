@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ChatsView: View {
     var body: some View {
-        Text("Chats view goes here..")
-            .navigationTitle("Chats")
+        Text("Chats view goes here..") 
 
     }
 }
